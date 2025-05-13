@@ -1,11 +1,19 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
   font-family: 'Arial', sans-serif;
   background: url('images/pattern.jpeg') repeat;
   color: #111;
 }
 
 .container {
+  width: 100%;
   max-width: 1000px;
   margin: auto;
   background: #fefe64;
@@ -17,9 +25,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  list-style-type: none;
-  margin: 0;
-  padding: 10px 0;
+  list-style: none;
+  padding: 10px;
   background-color: #ffffff;
   border-bottom: 2px solid black;
 }
@@ -49,7 +56,6 @@ body {
 .hero h1 {
   font-size: 2rem;
   font-weight: 800;
-  line-height: 1.2;
   margin: 0;
 }
 
@@ -87,6 +93,7 @@ body {
 #contact h2 {
   font-size: 1.5rem;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .about ul,
@@ -133,7 +140,6 @@ figcaption {
   color: #333;
 }
 
-/* Responsive YouTube Video */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
